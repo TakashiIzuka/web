@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink</title>
+    <style>
+        .lin a {
+            display: inline-block;
+            background-color: #4bc4e2;
+            color:white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .lin a:hover{
+            background-color: #0884b1;
+        }
+    </style>
+</head>
+<body style="font-family: Arial;">
+    <div class="lin">
+    <h1 align="center"><b>Hyperlink Dalam HTML</h1>
+    <p><b>Hyperlink</b> dalam HTML digunakan untuk membuat tautan yang memungkinkan pengguna untuk berpindah dari satu halaman ke halaman yang lainnya atau ke lokasi tertentu dalam halaman yang sama.</p>
+    <p>Link di bagi menjadi 8 setau saya di bawah ini.<br>Jenis-jenis Link:</p>
+    <ol>
+        <li><b>Link Absolut</b></li>
+            <p style="margin-bottom: 0px;">Link Absolut adalah tautan (link) yang merujuk ke halaman di situs web lain, dan alamatnya harus di tulis dengan lengkap, termasuk domain dan jalur yang benar.<br>Contoh Link:</p>
+            <a href="https://github.com/takashiizuka" target="_blank" name="atas">Link Absolut</a>
+        <li><b>Link Relatif</b></li>
+            <p style="margin-bottom: 0px;">Link Relatif adalah tautan yang menghubungkan satu dokumen dengan dokumen lain dalam situs web yang sama atau juga bisa menghubungkan satu file/halaman html dengan file html yang lain.<br>Contoh Link:</p>
+            <a href="index.html">Kembali Ke Awal</a>
+        <li><b>Link Internal / Anchor</b></li>
+            <p style="margin-bottom: 0px;">Link internal dikenal sebagai link dalam satu halaman adalah jenis tautan yang menghubungkan bagian-bagian berbeda dari halaman web yang sama.<br>Contoh Link:</p>
+            <a href="#bawah">Ke Bawah</a>
+        <li><b>Target Link</b></li>
+            <p style="margin-bottom: 0px;">Target link mengacu pada cara browser menampilkan halaman yang dituju saat pengguna mengklik suatu link. <br>Contoh Link:</p>
+            <a href="https://github.com/takashiizuka/Nezha-Md" target="_blank">Link target</a>
+        <li style="margin-top:10px"><b>Link Telepon</b></li>
+            <p style="margin-bottom:0px;">Link telepon dapat digunakan untuk melakukan panggilan telepon. Jika link ini di klik, makan melakukan panggilan telepon pada nomor tujuan. <br>Contoh Link:</p>
+            <a href="tel://+6283162964447" target="_blank">Link telepon</a>
+        <li><b>Link Email</b></li>
+            <p style="margin-bottom: 0px;">Link Email digunakan untuk mengirim ke alamat email. Jika link ini diklik, maka akan membuka jendela pengirim email dari program email yang terinstall pada komputer.<br>Contoh Link:</p>
+            <a href="mailto:takashiizuka1@gmail.com?subject=Konz%20njir%20awokawokawok." target="_blank">Kirim Email</a>
+        <li><b>Link SMS</b></li>
+            <p style="margin-bottom:0px;">Link SMS digunakan untuk melakukan pengiriman pesan SMS pada nomor tujuan. Jika link ini diklik, maka akan melakukan pengiriman SMS pada nomor tujuan. SMS bisa juga di ubah menjadi pesan WhatsApp.<br>Contoh Link:</p>
+            <a href="sms:+6283162964447?body=Konz%20njir%20awokawokawok." target="_blank">Kirim SMS</a>
+            <br><a href="https://wa.me/6283876197528?text=Konz%20njir%20awokawokawok." target="_blank">Kirim WA</a>
+        <li><b>Link Download</b></li>
+            <p style="margin-bottom:0px;">Link download digunakan untuk mengunduh file/data dari server atau sering di sebut dengan istilah download. Jika link ini diklik, maka akan muncul kotak dialog yang menanyakan apakah anda akan menyimpan file itu dalam harddisk atau membukanya dengan program aplikasi yang sesuai.<br>Contoh link:</p>
+            <a href="media/exec.rar" download="owner-exec.rar">Download Script</a>
+            <br><a href="#atas" name ="bawah">Kembali ke atas</a>
+    </ol>
+    </div>
+</body>
+</html>
