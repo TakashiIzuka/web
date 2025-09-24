@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrasi</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+            margin: 0;
+        }
+        fieldset {
+            width: 400px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        label {
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            flex: 1;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+        textarea { height: 60px; }
+        legend {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        /* --- Area tombol --- */
+        .button-row {
+            display: flex;
+            justify-content: space-between; /* reset kiri, daftar kanan */
+            margin-top: 15px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+        input[type="submit"]:hover { background-color: #45a049; }
+        input[type="reset"]:hover { background-color: #e53935; }
+    </style>
+</head>
+<body>
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <legend>Registrasi</legend>
+
+        <p>
+            <label>Nama:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap..." />
+        </p>
+        <p>
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Username..." />
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Your email..." />
+        </p>
+        <p>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Password..." />
+        </p>
+        <p>
+            <label>Jenis kelamin:</label>
+            <span>
+                <input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki
+                <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan
+            </span>
+        </p>
+        <p>
+            <label>Tanggal Lahir:</label>
+            <input type="date" name="bday">
+        </p>
+        <p>
+            <label>Agama:</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+        </p>
+        <p>
+            <label>Biografi:</label>
+            <textarea name="biografi"></textarea>
+        </p>
+        <p>
+            <label>File koding anda:</label>
+            <input type="file" name="filecode" accept="code/*">
+        </p>
+        <p>
+            <label>Foto anda:</label>
+            <input type="file" name="filephoto" accept="image/*">
+        </p>
+        <p>
+            <label>Warna favorit:</label>
+            <input type="color" value="#ff0000" name="favcolor">
+        </p>
+
+        <!-- Tombol Reset & Daftar -->
+        <div class="button-row">
+            <input type="reset" value="Reset">
+            <input type="submit" name="submit" value="Daftar">
+        </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
